@@ -1,0 +1,4 @@
+# basic.mgl
+data = read("users.csv")
+print(data)
+print(data.count())
