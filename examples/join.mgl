@@ -1,0 +1,7 @@
+# join.mgl
+users  = read("users.csv")
+orders = read("orders.csv")
+enriched = users.join(orders, id)
+result = enriched.filter(price > 50).sort(price, desc)
+print(result.head(20))
+result.write("joined_output.csv")
