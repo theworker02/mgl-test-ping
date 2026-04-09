@@ -1,0 +1,4 @@
+# filtering.mgl
+data = read("users.csv")
+adults = data.filter(age >= 18)
+print(adults.sort(age, desc).head(10))
