@@ -1,0 +1,4 @@
+# aggregation.mgl
+orders = read("orders.csv")
+print(orders.group_by(country).sum(price))
+print(orders.group_by(country).count())
